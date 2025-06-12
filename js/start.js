@@ -702,57 +702,549 @@
 //   ])
 // );
 
-44444444444444444444444444444444444444444444444444
+// 44444444444444444444444444444444444444444444444444
 
 
-const clients = [
-	{
-    name: "Moore Hensley",
-    gender: "male",
-    balance: 2811
-  },
-  {
-    name: "Sharlene Bush",
-    gender: "female",
-    balance: 3821
-  },
-  {
-    name: "Ross Vazquez",
-    gender: "male",
-    balance: 3793
-  },
-  {
-    name: "Elma Head",
-    gender: "female",
-    balance: 2278
-  },
-  {
-    name: "Carey Barr",
-    gender: "male",
-    balance: 3951
-  },
-  {
-    name: "Blackburn Dotson",
-    gender: "male",
-    balance: 1498
-  },
-  {
-    name: "Sheree Anthony",
-    gender: "female",
-    balance: 2764
-  }
-];
+// const clients = [
+// 	{
+//     name: "Moore Hensley",
+//     gender: "male",
+//     balance: 2811
+//   },
+//   {
+//     name: "Sharlene Bush",
+//     gender: "female",
+//     balance: 3821
+//   },
+//   {
+//     name: "Ross Vazquez",
+//     gender: "male",
+//     balance: 3793
+//   },
+//   {
+//     name: "Elma Head",
+//     gender: "female",
+//     balance: 2278
+//   },
+//   {
+//     name: "Carey Barr",
+//     gender: "male",
+//     balance: 3951
+//   },
+//   {
+//     name: "Blackburn Dotson",
+//     gender: "male",
+//     balance: 1498
+//   },
+//   {
+//     name: "Sheree Anthony",
+//     gender: "female",
+//     balance: 2764
+//   }
+// ];
 
-const getTotalBalanceByGender = (users, gender) => 
-  users
-    .filter(user => user.gender === gender)
-    .reduce((total, user) => total + user.balance, 0);
-
-
-console.log(getTotalBalanceByGender(clients, "male")); // 12053
-
-console.log(getTotalBalanceByGender(clients, "female")); // 8863
+// const getTotalBalanceByGender = (users, gender) => 
+//   users
+//     .filter(user => user.gender === gender)
+//     .reduce((total, user) => total + user.balance, 0);
 
 
+// console.log(getTotalBalanceByGender(clients, "male")); // 12053
+
+// console.log(getTotalBalanceByGender(clients, "female")); // 8863
+
+// function makePizza() {
+//   return "Your pizza is being prepared, please wait.";
+// }
+
+// const result = makePizza();
+// console.log(result);
+
+// const pointer = makePizza;
+// console.log(pointer);
+// function deliverPizza(pizzaName) {
+//   return `Delivering ${pizzaName} pizza.`;
+// }
+
+// function makePizza(pizzaName) {
+//   return `Pizza ${pizzaName} is being prepared, please wait...`;
+// }
+
+// function makeMessage(pizzaName, callback) {
+//   return callback(pizzaName);
+  
+
+// }
+// console.log(
+// makeMessage("Royal Grand", makePizza) );
+
+// function makePizza(pizzaName, callback) {
+//   console.log(`Pizza ${pizzaName} is being prepared, please wait...`);
+//   callback(pizzaName);
+// }
+
+// makePizza("Royal Grand", function deliverPizza(pizzaName) {
+//   console.log(`Delivering pizza ${pizzaName}`);
+// });
+
+// makePizza("Ultracheese", function eatPizza(pizzaName){
+//     console.log(`Eating pizza  ${pizzaName}`);
+    
+// })
 
 
+// function calculateTotalPrice(orderedItems) {
+//   let totalPrice = 0;
+
+//   orderedItems.forEach(function (number) {
+//     totalPrice += number;
+//   });
+
+//   return totalPrice;
+// }
+
+// console.log(calculateTotalPrice([12, 85, 37, 4]));
+//  console.log(calculateTotalPrice([164, 48, 291]));
+//   console.log(calculateTotalPrice([412, 371, 94, 63, 176]));
+ 
+// function filterArray(numbers, value) {
+//   const filteredNumbers = [];
+
+//   numbers.forEach(function (number) {
+//     if (number > value) {
+//       filteredNumbers.push(number);
+//     }
+//   });
+
+//   return filteredNumbers;
+// }
+
+
+// console.log(filterArray([1, 2, 3, 4, 5], 3));
+// console.log(filterArray([1, 2, 3, 4, 5], 4));
+// console.log(filterArray([1, 2, 3, 4, 5], 5));
+// console.log(filterArray([12, 24, 8, 41, 76], 38));
+// console.log(filterArray([12, 24, 8, 41, 76], 20));
+
+
+// const changeEven = (numbers, value) => 
+//   numbers.map(num => (num % 2 === 0 ? num + value : num));
+
+
+// console.log(changeEven([1, 2, 3, 4, 5], 10));
+// console.log(changeEven([2, 8, 3, 7, 4, 6], 10));
+// console.log(changeEven([17, 24, 68, 31, 42], 100));
+// console.log(changeEven([44, 13, 81, 92, 36, 54], 100));
+
+// const pizzaPalace = {
+//   pizzas: ["Supercheese", "Smoked", "Four meats"],
+ 
+//   checkPizza(pizzaName) {
+//     return this.pizzas.includes(pizzaName);
+    
+    
+//   },
+//   order(pizzaName) {
+//     const isPizzaAvailable = this.checkPizza(pizzaName);
+
+//     if (!isPizzaAvailable) {
+//       return `Sorry, there is no pizza named «${pizzaName}»`;
+//     }
+
+//     return `Order accepted, preparing «${pizzaName}» pizza`;
+//   },
+
+// };
+// console.log(pizzaPalace.order("Smoked"));
+// console.log(pizzaPalace.order("Four meats"));
+// console.log(pizzaPalace.order("Big Mike"));
+// console.log(pizzaPalace.order("Viennese"));
+
+// "use strict";
+
+// function showThis() {
+//   console.log("this in showThis: ", this);
+// }
+// showThis();
+
+
+// const parent = {
+//   name: "Stacey",
+//   surname: "Moore",
+//   age: 54,
+//   heritage: "Irish",
+  
+// };
+
+
+
+// const child = Object.create(parent);
+// child.name = "Jason";
+// child.age = 27;
+
+// console.log(parent.hasOwnProperty("surname"));
+
+
+// const ancestor = {
+//   name: "Paul",
+//   age: 83,
+//   surname: "Dawson",
+//   heritage: "Irish",
+// };
+
+// const parent = Object.create(ancestor);
+// parent.name = "Stacey";
+// parent.surname = "Moore";
+// parent.age = 54;
+
+// const child = Object.create(parent);;
+// child.name = "Jason";
+// child.age = 27;
+
+
+// console.log(ancestor.hasOwnProperty("surname"));
+
+
+// class User {
+//   constructor() {
+// 		console.log("constructor call")
+//   }
+// }
+
+// const mango = new User(); // "constructor call"
+// console.log(mango); // {}
+
+
+// class Car {
+//   constructor (brand, model, price) {
+// this.brand = brand;
+// this.model = model;
+// this.price = price;
+//   }
+// }
+
+
+// console.log(new Car("Audi", "Q3", 36000));
+
+// console.log(new Car("BMW", "X5", 58900));
+
+// console.log( new Car("Nissan","Murano", 31700));
+
+// class Car {
+//   constructor (params) {
+// this.brand = params.brand;
+// this.model = params.model;
+// this.price = params.price;
+//   }
+// }
+
+
+
+// console.log(new Car({ brand: "Audi", model: "Q3", price: 36000}));
+
+// console.log(new Car({ brand: "BMW", model: "X5", price: 58900}));
+
+// console.log(new Car({ brand: "Nissan", model: "Murano", price: 31700 }));
+
+
+
+// class Car {
+//   constructor (params) {
+// this.brand = params.brand;
+// this.model = params.model;
+// this.price = params.price;
+//   }
+
+
+// getPrice() {
+//   return this.price;
+// }
+
+// changePrice(newPrice) {
+//   this.price = newPrice;
+// }
+
+// }
+
+
+// class Car {
+//   #brand;
+
+//   constructor(params) {
+//     this.#brand = params.brand;
+//     this.model = params.model;
+//     this.price = params.price;
+//   }
+
+//   getPrice() {
+//     return this.price;
+//   }
+//    changePrice(newPrice) {
+//     this.price = newPrice;
+//   }
+// getBrand(){
+//   return this.#brand;
+// }
+// changeBrand(newBrand){
+//   this.#brand = newBrand;
+// }
+// }
+
+// console.log(new Car({ brand: "Audi", model: "Q3", price: 36000 }));
+// console.log(new Car({ brand: "bmw", model: "X5", price: 58900 }));
+// console.log(new Car({ brand: "Nissan", model: "Murano", price: 31700 }));
+ 
+
+// class Car {
+//   #price;
+//   static maxPrice = 50000;
+
+//   constructor(params) {
+//     this.#price = params.price;
+//   }
+
+//   get price() {
+//     return this.#price;
+//   }
+
+//   set price(newPrice) { 
+//     if (newPrice <= Car.maxPrice) {
+//     this.#price = newPrice;
+//   }}
+// }
+
+// const audi = new Car({ price: 35000 });
+// console.log(audi.price); // 35000
+
+// audi.price = 49000;
+// console.log(audi.price); // 49000
+
+// audi.price = 51000;
+// console.log(audi.price); // 49000
+// class User {
+//   constructor(email) {
+//     this.email = email;
+//   }
+
+//   get email() {
+//     return this.email;
+//   }
+
+//   set email(newEmail) {
+//     this.email = newEmail;
+//   }
+// }
+
+// class Admin extends User{
+//    static role =  {BASIC: "basic", SUPERUSER: "superuser"}
+// }
+
+// console.log(Admin.role.SUPERUSER);
+
+// class User {
+//   email;
+
+//   constructor(email) {
+//     this.email = email;
+//   }
+
+//   get email() {
+//     return this.email;
+//   }
+
+//   set email(newEmail) {
+//     this.email = newEmail;
+//   }
+// }
+
+// class Admin extends User {
+
+//     constructor(params) {
+//     super(params.email);
+//     this.access = params.access;
+//     }
+
+//   static role = {
+//     BASIC: "basic",
+//     SUPERUSER: "superuser",
+//   };
+// }
+
+// const mango = new Admin({
+//   email: "mango@mail.com",
+//   access: Admin.role.SUPERUSER,
+// });
+
+// console.log(mango.email); // "mango@mail.com"
+// console.log(mango.access); // "superuser"
+
+
+
+// class User {
+//   email;
+
+//   constructor(email) {
+//     this.email = email;
+//   }
+
+//   get email() {
+//     return this.email;
+//   }
+
+//   set email(newEmail) {
+//     this.email = newEmail;
+//   }
+// }
+// class Admin extends User {
+//   static role = {
+//     BASIC: "basic",
+//     SUPERUSER: "superuser",
+//   };
+
+//   constructor(params) {
+//     super(params.email);
+//     this.access = params.access;
+//     this.blacklistedEmails = [];
+//   }
+//    blacklist(email) {
+//     this.blacklistedEmails.push(email);
+//   }
+//    isBlacklisted(email){
+//     return this.email.includes(email);
+//   }
+//   }
+
+// const mango = new Admin({
+//   email: "mango@mail.com",
+//   access: Admin.role.SUPERUSER,
+// });
+
+// console.log(mango.email); // "mango@mail.com"
+// console.log(mango.access); // "superuser"
+
+// mango.blacklist("poly@mail.com");
+// console.log(mango.blacklistedEmails); // ["poly@mail.com"]
+// console.log(mango.isBlacklisted("mango@mail.com")); // false
+// console.log(mango.isBlacklisted("poly@mail.com")); // true
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1111111111111111111111111111111111111111
+// const customer = {
+//   username: "Mango",
+//   balance: 24000,
+//   discount: 0.1,
+//   orders: ["Burger", "Pizza", "Salad"],
+  
+//   getBalance() {
+//     return this.balance;
+//   },
+//   getDiscount() {
+//     return this.discount;
+//   },
+//   setDiscount(value) {
+//     this.discount = value;
+//   },
+//   getOrders() {
+//     return this.orders;
+//   },
+//   setOrder(cost, order) {
+//    this.balance -= cost - (cost * this.discount);
+//    this.orders.push(order);
+//   },
+
+// };
+// customer.setOrder(5000, "Steak");
+// customer.setDiscount(0.15);
+// console.log(customer.getDiscount()); // 0.15
+// console.log(customer.getBalance()); // 19500
+// console.log(customer.getOrders()); // ["Burger", "Pizza", "Salad", "Steak"]
+
+
+222222222222222222222222222222222222222222222222222
+
+// class Storage {
+
+// #items;
+
+// constructor(initialItems) {
+//   this.#items = initialItems;
+// }
+//   getItems( ) {
+// return this.#items;
+//   }
+//   addItem(newItem) {
+// this.#items.push(newItem);
+//   }
+//   removeItem(itemToRemove) {
+// const index = this.#items.indexOf(itemToRemove);
+// if (index !== -1) {
+//   this.#items.splice(index, 1);
+// }}}
+
+
+
+
+
+// const storage = new Storage(["Nanitoids", "Prolonger", "Antigravitator"]);
+// console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator"]
+
+// storage.addItem("Droid");
+// console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator", "Droid"]
+
+// storage.removeItem("Prolonger");
+// console.log(storage.getItems()); // ["Nanitoids", "Antigravitator", "Droid"]
+
+// storage.removeItem("Scaner");
+// console.log(storage.getItems()); // ["Nanitoids", "Antigravitator", "Droid"]
+
+
+
+// 33333333333333333333333333333333333333333333333333
+
+// class StringBuilder {
+//   #value;
+
+//   constructor(initialValue) {
+//    this.#value = initialValue;
+//   }
+//   getValue(){
+//     return this.#value;
+//   }
+//   padEnd(str){
+// this.#value += str;
+//   }
+//   padStart(str){
+// this.#value = str + this.#value;
+//   }
+// padBoth(str){
+// this.#value = str + this.#value + str;
+// }
+// }
+
+// const builder = new StringBuilder(".");
+// console.log(builder.getValue()); // "."
+// builder.padStart("^");
+// console.log(builder.getValue()); // "^."
+// builder.padEnd("^");
+// console.log(builder.getValue()); // "^.^"
+// builder.padBoth("=");
+// console.log(builder.getValue()); // "=^.^="
